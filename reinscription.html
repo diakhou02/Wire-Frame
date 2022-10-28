@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1
+        {
+            text-align: center;
+        }
+
+        #conteneur
+        {
+            display: flex;
+            justify-content: center;
+            height: 600px;
+            width: 100%;
+
+        }
+
+        #inscription
+        {
+            display: flex;
+            flex-direction: column;
+            background-color: azure;
+            box-shadow: 5px 5px 4px black;
+            border-radius: 10px;
+            height: 700px;
+            width: 600px;
+
+        }
+
+        .champ1
+        {
+
+            margin-top: 20px;
+            margin-left: 50px;
+            height: 80px;
+            width: 500px;
+        }
+
+        #push
+        {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .bouton
+        {
+            height: 50px;
+            width: 150px;
+        }
+
+        #annee
+        {
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="conteneur">
+        <div id="inscription">
+            <h1>RÉINSCRIPTION</h1>
+            <div class="champ1">
+                <label for="matricule">MATRICULE : </label>
+                        <input type="text" name="matricule" id="matricule"size="35" maxlength="20" />
+            </div>
+            <div class="champ1">
+                <label for="nom_prenom">NOM / PRENOM : </label>
+                <input type="text" name="nom_prenom" id="nom_prenom"size="31" maxlength="20" />
+            </div>
+            <div class="champ1">
+                <label for="date_naissance">DATE DE NAISSANCE</label>
+                <input type="date" />
+            </div>
+            <div class="champ1">
+                <label for="pays">ANNÉE SCOLAIRE</label><br />
+                <select name="annee" id="annee">
+                    <option value="semestre1">2021/2022</option>
+                </select>
+
+            </div>
+            <div class="champ1">
+                <label for="classe">classe</label>
+                    <select name="classe" id="classe">
+                        <option value=""></option>
+                        <option value="">L1 Glrs A</option>
+                        <option value="">L2 Glrs b</option>
+                        <option value="">L1 ETSE A</option>
+                        <option value="">L2 ETSE B</option>
+                        <option value="">L1 MOSIEF A</option>
+                    </select>
+
+            </div>
+            <div id="push">
+                <div class="bouton">
+                    <input type="reset" value="Reinitialiser" />
+                </div>
+                <div class="bouton">
+                    <input type="submit" value="Envoyer" />
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

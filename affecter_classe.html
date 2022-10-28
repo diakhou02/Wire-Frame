@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h3
+        {
+            text-align: center;
+        }
+        #conteneur
+        {
+            display: flex;
+            justify-content: center;
+            height: 700px;
+            width: 100%;
+
+        }
+
+        #conteneur1
+        {
+            display: flex;
+            flex-direction: column;
+            background-color: azure;
+            box-shadow: 5px 5px 4px black;
+            border-radius: 10px;
+            height: 700px;
+            width: 600px;
+
+        }
+
+        .conteneur2
+        {
+            margin-top: 20px;
+            margin-left: 50px;
+            width: 500px;
+            height: 300px;
+        }
+
+        .champ3
+        {
+            margin-top: 20px;
+            margin-left: 50px;
+            height: 50px;
+            width: 400px;
+        }
+
+        .champ4
+        {
+            margin-top: 20px;
+            margin-left: 50px;
+            height: 50px;
+            width: 420px;
+        }
+
+        #push
+        {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .bouton
+        {
+            height: 50px;
+            width: 150px;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+
+
+    <div id="conteneur">
+        <div id="conteneur1">
+            <h3>AFFECTER DES CLASSES</h3>
+            <div class="conteneur2">
+                <form method="post" action="traitement.php">
+                    <fieldset>
+                        <legend>INFORMATIONS</legend>
+                        <div class="champ3">
+                    
+                            <label for="matricule">MATRICULE : </label>
+                            <input type="text" name="matricule" id="matricule"size="35" maxlength="20" />
+                        </div>
+                        <div class="champ4">
+                            <label for="nom_prenom">NOM / PRENOM : </label>
+                            <input type="text" name="nom_prenom" id="nom_prenom"size="31" maxlength="20" />
+                        </div>
+                        <div class="champ4">
+                            <label for="grade">GRADE : </label>
+                            <input type="text" name="grade" id="grade"size="40" maxlength="20" />
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="conteneur2">
+                <form method="post" action="traitement.php">
+                    <fieldset>
+                        <legend>LISTE DES CLASSES</legend>
+                        <div class="champ3">
+                            <input type="date" />
+                        </div>
+                        <div class="champ4">
+                            <label for="pays">SEMESTRE</label><br />
+                            <select name="SEMESTRE" id="SEMESTRE">
+                                <option value="semestre1">semestre 1</option>
+                                <option value="semestre2">semestre 2</option>
+                                <option value="semestre3">semestre 3</option>
+                                <option value="semestre4">semestre 4</option>
+                                <option value="semestre5">semestre 5</option>
+                                <option value="semestre6">semestre 6</option>
+                            </select>
+                        </div>
+                        <div class="champ4">
+                            <p>CLASSES</p>
+                            <input type="radio" name="classe" id="l1a" /> <label for="glrs">L1 GLRS A</label>
+                            <input type="radio" name="classe" id="l2a" /> <label for="glrs">L2 GLRS B</label>
+                            <input type="radio" name="classe" id="l1b" /> <label for="glrs">L1 ETSE A</label>
+                            <input type="radio" name="classe" id="l1a" /> <label for="glrs">L2 ETSE B</label>
+       </p>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <div id="push">
+                    <div class="bouton">
+                        <input type="reset" value="Reinitialiser" />
+                    </div>
+                    <div class="bouton">
+                        <input type="submit" value="Envoyer" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
